@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../Topic 1"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Topic 2"
+	}
+}

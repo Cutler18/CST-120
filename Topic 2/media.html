@@ -1,0 +1,69 @@
+<!--
+Jacob Cutler
+CST-120 Introduction to Web Development
+Activity 2
+10/12/2025
+
+REFERENCES:
+Grand Canyon University. (n.d.). CST-120 Activity 2 Guide. 2023. Grand Canyon University
+SoloLearn. (n.d.). Introduction to HTML. https://www.sololearn.com/en/learn/courses/html-introduction
+W3Schools. (n.d.). HTML Tutorial. 2025. Refsnes Data. https://www.w3schools.com/html/
+-->
+
+<!--Set the DOCTYPE-->
+<!DOCTYPE html>
+<!--Set the language-->
+<html lang="en">
+  <!--Page head-->
+  <head>
+    <!--Establish character set-->
+    <meta charset="UTF-8" />
+    <!--Set the width to the size of the device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title of the page-->
+    <title>Video and Audio Media</title>
+  </head>
+  <body>
+    <div align="center">
+      <h1>Video and Audio Media</h1>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/JdVLnLKC-pk?si=K-Cy04JEv9yUkOJ5"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <h4>Grand Canyon University Doctrinal Statement</h4>
+      <video width="320" height="240" controls>
+        <source src="media/Nelson.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <br />
+      <!--<h4>Student Support Video Clip</h4>-->
+      <svg width="400" height="28">
+        <text x="125" y="15" fill="red">
+            Student Support Video Clip
+            <animate attributeType="CSS" attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite" />
+        </text>
+        Sorry, your browser does not support inline SVG.
+      </svg>
+      <br />
+      <audio controls>
+        <source src="media/Oaks.mp3" type="audio/mp3" />
+        Your browser does not support the audio tag.
+      </audio>
+      <br />
+      <!--<h4>Student Support Audio Clip</h4>-->
+      <svg width="400" height="28">
+        <text x="125" y="15" fill="red">
+            Student Support Audio Clip
+            <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite" />
+        </text>
+      </svg>
+      <br />
+    </div>
+  </body>
+</html>
