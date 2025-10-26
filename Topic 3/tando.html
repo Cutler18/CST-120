@@ -1,0 +1,268 @@
+<!--
+Jacob Cutler
+CST-120 Introduction to Web Development
+Activity 3
+10/26/2025
+
+REFERENCES:
+Geeks for Geeks. (2025, Jul 23). Why Would You Use Flexbox Instead of Floats?. https://www.geeksforgeeks.org/css/why-would-you-use-flexbox-instead-of-floats/
+Grand Canyon University. (n.d.). CST-120 Activity 2 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 3 Guide. 2023. Grand Canyon University
+SoloLearn. (n.d.). Introduction to HTML. https://www.sololearn.com/en/learn/courses/html-introduction
+Taneja, M. (2020, May 7). Grids vs Flexbox vs Floats vs Position. https://medium.com/@madhur.taneja/css-layouts-cced6c7a8764
+W3Schools. (n.d.). HTML Tutorial. 2025. Refsnes Data. https://www.w3schools.com/html/
+-->
+
+<!--Set DOCTYPE to html-->
+<!DOCTYPE html>
+<!--Set language to English-->
+<html lang="eng">
+  <!--Page head-->
+  <head>
+    <style>
+      #course-matrix-table {
+        border-collapse: collapse;
+      }
+      #course-matrix-table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      #course-matrix-table th {
+        color: white;
+        background-color: #4f2fb6;
+      }
+      #course-matrix-table tr:first-child {
+        background: #ccc;
+      }
+      #course-matrix-table td:nth-child(1) {
+        font-weight: bold;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Assignment Matrix</title>
+  </head>
+  <!--Page body-->
+  <body>
+    <!--Title header-->
+    <h1>Course Assignment Matrix</h1>
+    <!--Table with the assignment matrix-->
+    <table width="50%" id="course-matrix-table">
+      <thead>
+        <tr align="center">
+          <!--Table headers-->
+          <th width="33%">Assignments</th>
+          <th width="33%">Week Due</th>
+          <th width="33%">Points</th>
+        </tr>
+      </thead>
+      <!--Week 1 assignments-->
+      <tbody>
+        <tr>
+          <td align="left">Summary of Current Course Content Knowledge</td>
+          <td align="center">1</td>
+          <td align="center">0</td>
+        </tr>
+        <tr>
+          <td align="left">Class Introductions</td>
+          <td align="center">1</td>
+          <td align="center">0</td>
+        </tr>
+        <tr>
+          <td align="left">Topic 1 DQ 1</td>
+          <td align="center">1</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Topic 1 DQ 2</td>
+          <td align="center">1</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Activity 1: Tools Install and Basic HTML</td>
+          <td align="center">1</td>
+          <td align="center">35</td>
+        </tr>
+        <tr>
+          <td align="left">Milestone 1: Iteration 1 of Web Site</td>
+          <td align="center">1</td>
+          <td align="center">85</td>
+        </tr>
+        <tr>
+          <td align="left">Week 1 Participation</td>
+          <td align="center">1</td>
+          <td align="center">20</td>
+        </tr>
+        <!--Week 2 Assignments-->
+        <tr>
+          <td align="left">Deploy Your Website to GitHub Pages (Optional)</td>
+          <td align="center">2</td>
+          <td align="center">0</td>
+        </tr>
+        <tr>
+          <td align="left">Topic 2 DQ 1</td>
+          <td align="center">2</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Topic 2 DQ 2</td>
+          <td align="center">2</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Activity 2: Advanced HTML</td>
+          <td align="center">2</td>
+          <td align="center">35</td>
+        </tr>
+        <tr>
+          <td align="left">Milestone 2: Iteration 2 of Website</td>
+          <td align="center">2</td>
+          <td align="center">75</td>
+        </tr>
+        <tr>
+          <td align="left">Week 2 Participation</td>
+          <td align="center">2</td>
+          <td align="center">20</td>
+        </tr>
+        <!--Week 3 Assignments-->
+        <tr>
+          <td align="left">Topic 3 DQ 1</td>
+          <td align="center">3</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Topic 3 DQ 2</td>
+          <td align="center">3</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Activity 3: CSS</td>
+          <td align="center">3</td>
+          <td align="center">35</td>
+        </tr>
+        <tr>
+          <td align="left">Milestone 3: Iteration 3 of Website</td>
+          <td align="center">3</td>
+          <td align="center">75</td>
+        </tr>
+        <tr>
+          <td align="left">Week 3 Participation</td>
+          <td align="center">3</td>
+          <td align="center">20</td>
+        </tr>
+        <!--Week 4 Assignments-->
+        <tr>
+          <td align="left">Topic 4 DQ 1</td>
+          <td align="center">4</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Topic 4 DQ 2</td>
+          <td align="center">4</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Activity 4: JavaScript</td>
+          <td align="center">4</td>
+          <td align="center">35</td>
+        </tr>
+        <tr>
+          <td align="left">Milestone 4: Iteration 4 of Website</td>
+          <td align="center">4</td>
+          <td align="center">60</td>
+        </tr>
+        <tr>
+          <td align="left">Week 4 Participation</td>
+          <td align="center">4</td>
+          <td align="center">20</td>
+        </tr>
+        <!--Week 5 Assignments-->
+        <tr>
+          <td align="left">Topic 5 DQ 1</td>
+          <td align="center">5</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Topic 5 DQ 2</td>
+          <td align="center">5</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Activity 5: Advanced HTML</td>
+          <td align="center">5</td>
+          <td align="center">35</td>
+        </tr>
+        <tr>
+          <td align="left">Milestone 5: Iteration 5 of Website</td>
+          <td align="center">5</td>
+          <td align="center">75</td>
+        </tr>
+        <tr>
+          <td align="left">Week 5 Participation</td>
+          <td align="center">5</td>
+          <td align="center">20</td>
+        </tr>
+        <!--Week 6 Assignments-->
+        <tr>
+          <td align="left">Topic 6 DQ 1</td>
+          <td align="center">6</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Topic 6 DQ 2</td>
+          <td align="center">6</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Activity 6: jQuery and Bootstrap</td>
+          <td align="center">6</td>
+          <td align="center">35</td>
+        </tr>
+        <tr>
+          <td align="left">Milestone 6: Iteration 6 of Website</td>
+          <td align="center">6</td>
+          <td align="center">75</td>
+        </tr>
+        <tr>
+          <td align="left">Week 6 Participation</td>
+          <td align="center">6</td>
+          <td align="center">20</td>
+        </tr>
+        <!--Week 7 Assignments-->
+        <tr>
+          <td align="left">Topic 7 DQ 1</td>
+          <td align="center">7</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Topic 7 DQ 2</td>
+          <td align="center">7</td>
+          <td align="center">5</td>
+        </tr>
+        <tr>
+          <td align="left">Activity 7: HTML Forms Processing</td>
+          <td align="center">7</td>
+          <td align="center">35</td>
+        </tr>
+        <tr>
+          <td align="left">Milestone 7: Final Project Presentation</td>
+          <td align="center">7</td>
+          <td align="center">35</td>
+        </tr>
+        <tr>
+          <td align="left">Milestone 7: Final Website</td>
+          <td align="center">7</td>
+          <td align="center">75</td>
+        </tr>
+        <tr>
+          <td align="left">Week 7 Participation</td>
+          <td align="center">7</td>
+          <td align="center">20</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--Link back to index-->
+    <a href="index.html">Back to Main Page</a>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!--
+Jacob Cutler
+CST-120 Introduction to Web Development
+Activity 3
+10/26/2025
+
+REFERENCES:
+Geeks for Geeks. (2025, Jul 23). Why Would You Use Flexbox Instead of Floats?. https://www.geeksforgeeks.org/css/why-would-you-use-flexbox-instead-of-floats/
+Grand Canyon University. (n.d.). CST-120 Activity 2 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 3 Guide. 2023. Grand Canyon University
+SoloLearn. (n.d.). Introduction to HTML. https://www.sololearn.com/en/learn/courses/html-introduction
+Taneja, M. (2020, May 7). Grids vs Flexbox vs Floats vs Position. https://medium.com/@madhur.taneja/css-layouts-cced6c7a8764
+W3Schools. (n.d.). HTML Tutorial. 2025. Refsnes Data. https://www.w3schools.com/html/
+-->
+
+<!--Set the DOCTYPE-->
+<!DOCTYPE html>
+<!--Set the language-->
+<html lang="en">
+  <!--Page head-->
+  <head>
+    <!--Style Tag-->
+    <style>
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+      .blink_me_alarm {
+        animation: blinker 2s step-start infinite;
+        color: red;
+      }
+      .div1 {
+        width: 300px;
+        height: 25px;
+        border: 1px solid #4f2fb6;
+        transition: transform 2s;
+      }
+      .div1:hover {
+        width: 300px;
+        height: 25px;
+        transform: rotate(360deg);
+      }
+    </style>
+    <!--Establish character set-->
+    <meta charset="UTF-8" />
+    <!--Set the width to the size of the device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title of the page-->
+    <title>Video and Audio Media</title>
+  </head>
+  <!--Page body-->
+  <body>
+    <!--Start divider-->
+    <div align="center">
+      <!--Page header-->
+      <h1>Video and Audio Media</h1>
+      <!--iframe tag to youtube video-->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/JdVLnLKC-pk?si=K-Cy04JEv9yUkOJ5"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <!--Header for youtube video-->
+      <h4>Grand Canyon University Doctrinal Statement</h4>
+      <!--Inspirational video-->
+      <video width="320" height="240" controls>
+        <source src="media/Nelson.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <br />
+      <!--Header for video clip-->
+      <h4 class="blink_me_alarm">Student Support Video Clip</h4>
+      <br />
+      <!--Inspirational Audio clip-->
+      <audio controls>
+        <source src="media/Oaks.mp3" type="audio/mp3" />
+        <!--Message if browser doesn't support audio tags-->
+        Your browser does not support the audio tag.
+      </audio>
+      <br />
+      <h4 class="blink_me_alarm">Student Support Audio Clip</h4>
+      <br />
+      <br />
+      <div class="div1">GCU is a great university.</div>
+    </div>
+  </body>
+</html>
