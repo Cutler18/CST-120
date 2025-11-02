@@ -1,0 +1,53 @@
+<!--
+Jacob Cutler
+CST-120 Introduction to Web Development
+Activity 4
+11/02/2025
+
+REFERENCES:
+Grand Canyon University. (n.d.). CST-120 Activity 4 Guide. 2023. Grand Canyon University
+SoloLearn. (n.d.). Introduction to JavaScript. https://www.sololearn.com/en/learn/courses/javascript-introduction
+W3Schools. (n.d.). JavaScript Tutorial. 2025. Refsnes Data. https://www.w3schools.com/js/default.asp
+-->
+
+<!--Set DOCTYPE-->
+<!DOCTYPE html>
+<!--Set Language to English-->
+<html lang="eng">
+    <!--Page Head-->
+    <head>
+        <!--JavaScript-->
+        <script>
+            /**
+             * Hello world JavaScript that displays an alert window,
+             * display HTML in a div tag,
+             * and logs a message to the debug console
+             * */
+            function sayHello()
+            {
+                alert('Hello world!');
+                document.getElementById('hello-text').innerHTML = "Hello world!";
+                console.log("Hello world!");
+            }
+        </script>
+        <!--Establish character set-->
+        <meta charset="UTF-8" />
+        <!--Set the width to the size of the device-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Title of the page-->
+        <title>Hello World</title>
+    </head>
+    <!--Page Body-->
+    <body onLoad="sayHello()">
+        <!--Display text before running JavaScript-->
+        <p>Before running JavaScript</p>
+
+        <!--Div tag to display text using JavaScript-->
+        <div id='hello-text'>
+            This is the default text
+        </div>
+
+        <!--After running JavaScript-->
+        <p>After running JavaScript</p>
+    </body>
+</html>
