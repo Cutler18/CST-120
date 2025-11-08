@@ -1,0 +1,39 @@
+<!--
+Jacob Cutler
+CST-120 Introduction to Web Development
+Activity 5
+11/09/2025
+
+REFERENCES:
+Grand Canyon University. (n.d.). CST-120 Activity 5 Guide. 2023. Grand Canyon University
+SoloLearn. (n.d.). Introduction to HTML. https://www.sololearn.com/en/learn/courses/html-introduction
+W3Schools. (n.d.). JavaScript Tutorial. 2025. Refsnes Data. https://www.w3schools.com/js/
+-->
+
+<!--Set the DOCTYPE-->
+<!DOCTYPE html>
+<!--Set the language-->
+<html lang="en">
+  <!--Page head-->
+  <head>
+    <!--JavaScript Reference-->
+    <script src="js/mycode.js"></script>
+    <!--Establish character set-->
+    <meta charset="UTF-8" />
+    <!--Set the width to the size of the device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title of the page-->
+    <title>Advanced JavaScript</title>
+  </head>
+  <body>
+    <p id="title">Learning JavaScript</p>
+    <button onclick="javascript:conditions()">Conditions</button>
+    <button onclick="javascript:loops()">Loops</button>
+    <button onclick="javascript:objects()">Objects</button>
+    <script>
+      document.getElementById("title").addEventListener("click", function () {
+        alert("This is fun!");
+      });
+    </script>
+  </body>
+</html>
