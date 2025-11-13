@@ -1,0 +1,134 @@
+body {
+  margin-top: 20px;
+  margin-left: 20px;
+  background: rgb(0, 220, 220);
+}
+
+h1 {
+  font-family: Arial;
+  font-weight: bold;
+  margin: 0 0 16px;
+}
+
+h2 {
+  color: maroon;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+h3 {
+  color: blue;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 20;
+  margin: 0 0 8px;
+}
+
+li {
+  color: #002000;
+  font-family: Arial;
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+p {
+  font-family: Arial;
+  font-size: 18px;
+  margin: 16px 0 24px;
+  background: rgb(0, 200, 220);
+  border: 2px solid black;
+}
+
+a {
+  font-family: Arial;
+  color: blue;
+  background: rgb(231, 229, 229);
+  text-align: center;
+  text-decoration: none;
+}
+
+#titleHead {
+  color: red;
+  font-size: 40px;
+}
+
+#pageHead {
+  color: maroon;
+  font-size: 45px;
+}
+
+#div1,
+#div2,
+#div3,
+#div4,
+#div6,
+#div7,
+#div14,
+#div15 {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+
+#div5 {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+#div8,
+#div9,
+#div10,
+#div11,
+#div12,
+#div13 {
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+}
+
+#topHeader {
+  background: black;
+  height: 100px;
+}
+
+.hobbyTable {
+  width: 75%;
+  background: rgb(0, 200, 220);
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 50%;
+  }
+}
+
+.blink_alarm {
+  animation: blinker 2s step-start infinite;
+}
+
+.in_and_out {
+  height: 500px;
+}
+
+.in_and_out:hover {
+  height: 600px;
+}
+
+.media {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 300px;
+  align-items: stretch;
+  margin: 0 0 10px;
+}
+
+.arizonia-regular {
+  font-family: "Arizonia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

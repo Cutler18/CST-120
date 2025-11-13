@@ -1,0 +1,161 @@
+<!--
+Jacob Cutler
+Milestone Project - Week 5
+CST120 - Introduction to Web Development
+11/09/2025
+
+REFERENCES:
+Geeks for Geeks. (2025, Jul 23). Why Would You Use Flexbox Instead of Floats?. https://www.geeksforgeeks.org/css/why-would-you-use-flexbox-instead-of-floats/
+Grand Canyon University. (n.d.). CST-120 Activity 1 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 2 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 3 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 4 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 5 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Milestone Project Guide. 2024. Grand Canyon University
+SoloLearn. (n.d.). Introduction to HTML. https://www.sololearn.com/en/learn/courses/html-introduction
+SoloLearn. (n.d.). Introduction to JavaScript. https://www.sololearn.com/en/learn/courses/javascript-introduction
+Taneja, M. (2020, May 7). Grids vs Flexbox vs Floats vs Position. https://medium.com/@madhur.taneja/css-layouts-cced6c7a8764
+W3Schools. (n.d.). Floating Images. 2025. Refsnes Data. https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_float
+W3Schools. (n.d.). HTML Comments. 2025. Refsnes Data. https://www.w3schools.com/html/html_comments.asp
+W3Schools. (n.d.). HTML <div> Tag. 2025. Refsnes Data. https://www.w3schools.com/html/tag_div.ASP
+W3Schools. (n.d.). HTML Lists. 2025. Refsnes Data. https://www.w3schools.com/html/html_lists.asp
+W3Schools. (n.d.). HTML Tutorial. 2025. Refsnes Data. https://www.w3schools.com/html/
+-->
+
+<!--Assign the DOCTYPE-->
+<!DOCTYPE html>
+<!--Set the language to English-->
+<html lang="eng">
+  <!--Establish the title of the page, the character set, and set the device to the width of the device-->
+  <head>
+    <!--JavaScript Reference-->
+    <script src="JS/mysite.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="CSS/mysite.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+  </head>
+  <!--Header with the buttons to the other pages-->
+  <header id="topHeader">
+    <header id="topHeader">
+    <div id="headButtons">
+      <button onclick="loadAbtMe()" id="aboutMe">About Me</button>
+      <button onclick="loadContactMe()" id="contactMe">Contact Me</button>
+      <button onclick="loadMedia()" id="media">Photos / Videos</button>
+      <button onclick="loadMC()" id="marineCorps">Life in the Marine Corps</button>
+    </div>
+    <h1 align="center" id="titleHead" class="arizonia-regular">
+      All About Jacob
+    </h1>
+  </header>
+  <!--Body of the page-->
+  <body>
+    <div align="center">
+      <!--Page header-->
+      <h1 id="pageHead">Meet My Family</h1>
+    </div>
+    <br />
+    <!--First family image on page-->
+    <div id="div8" align="center">
+      <img src="images/familyImg1.jpg" />
+    </div>
+    <!--Image and description of Sara-->
+    <div id="div9" align="center">
+      <img src="images/sarImg.jpg" height="250" />
+      <h2>Sara</h2>
+      <p>
+        This is my wife Sara. We were married in August of 2018 and are blessed
+        to have found each other. She is originally from Colima, Mexico and now
+        lives with me in Yuma, AZ. She loves plants and is a dedicated mother
+        and wife. She has a bit of a temper, but it only shows how much she
+        cares about all of us. Her birthday is close to Christmas, which is her
+        favorite holiday, and she has a thing for redecorating. She is on her
+        way to becoming quite popular on TikTok and has even had sponsors from
+        TikTok send her free samples to try and post about. She was raised as a
+        country girl and lived in Mexico for most of her life before moving the
+        the USA with a permanent residency when she was 17.
+      </p>
+    </div>
+    <!--Second family image-->
+    <div id="div10" align="center">
+      <img src="images/familyImg2.jpg" />
+    </div>
+    <br />
+    <!--Image and description of Rose-->
+    <div id="div11" align="center">
+      <img src="images/Rose.jpg" height="250" />
+      <h2>Rose</h2>
+      <p>
+        This is my oldest child and only daughter Rose. She loves to do anything
+        there is to do. She performs in ballet, takes swimming lessons and horse
+        riding lessons, and is even involved in violin lessons. She is a beam of
+        light in a darkening world. She is always happy and smiling everywhere
+        we go. She gets sad mostly when we are finished doing whatever it is we
+        were doing, but she bounces back quickly. She is the one who made me a
+        dad and showed me a part of myself I never knew. She was born in 2018
+        and is continuing to grow faster than I would like.
+      </p>
+    </div>
+    <!--Image and Description of Nick-->
+    <div id="div12" align="center">
+      <img src="images/Nick.jpg" height="250" />
+      <h2>Nicholas</h2>
+      <p>
+        This is my oldest son Nick. He is a wild child if I've ever seen one. He
+        acts just like I did at that age which makes my mom say it's payback for
+        how I was. He is a sweetheart with way too much energy. He was born in
+        2020 and is growing very quickly. He played in T-Ball and performed very
+        well and is always trying to find something to do. He has had a couple
+        accidents so far that left a scar above his left eye and another on his
+        lower lip, but he keeps on going. He loves to play outside and ride his
+        bicycle everywhere he can. He tends to get into things he's not supposed
+        to no matter how many times he gets in trouble for it, but he is always
+        quick to help when he knows someone is hurt or sick.
+      </p>
+    </div>
+    <!--Image and Description of Harold-->
+    <div id="div13" align="center">
+      <img src="images/Harold.jpg" height="250" />
+      <h2>Harold</h2>
+      <p>
+        This is my youngest child Harold. He was born in 2024 and came with a
+        few concerns. While we were excited to welcome him into the world, it
+        was clear something was wrong when he was born. He had a large purple
+        and red stain across his back and legs as well as one leg that was about
+        twice the size of the other. Over the next few months we discovered he
+        has a very rare medical condition that has a long medical term but can
+        be shortened to MCAP. MCAP is a genetic mutation that causes an
+        overgrowth in the body. His right leg and right side of his head are
+        affected by this overgrowth. His brain is also affected, which is where
+        a lot of the medical trouble comes in. He has several other medical
+        conditions that stem from his disorder, but he still has all of the
+        energy and excitement as any other kid his age. He may be slow to
+        develop, but for him life is just beginning and there is a long way to
+        go.
+      </p>
+    </div>
+    <br />
+    <!--Video of Nick and His T-Ball Team-->
+    <div id="div14" align="center">
+      <h3>Nick and His T-Ball Team</h3>
+      <video width="200" controls>
+        <source src="videos/NickTBall.mp4" type="video/mp4" />
+        Video Tag Not Supported
+      </video>
+    </div>
+    <!--Video of Harold-->
+    <div id="div15" align="center">
+      <h3>Harold Being Crazy</h3>
+      <video width="200" controls>
+        <source src="videos/HaroldVideo.mp4" type="video/mp4" />
+        Video Tag Not Supported
+      </video>
+    </div>
+  </body>
+</html>
