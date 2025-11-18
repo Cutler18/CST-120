@@ -1,0 +1,104 @@
+body {
+  margin-top: 20px;
+  margin-left: 20px;
+  background: rgb(231, 229, 229);
+}
+
+h1 {
+  color: #002000;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0 0 16px;
+}
+
+h2 {
+  color: #4f2fb6;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+h3 {
+  color: #002000;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+h4 {
+  color: #002000;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+li {
+  color: #002000;
+  font-family: Arial;
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+p {
+  font-family: Arial;
+  font-size: 18px;
+  margin: 16px 0 24px;
+}
+
+a {
+  font-family: Arial;
+  color: rgb(221, 94, 20);
+  text-align: center;
+  text-decoration: none;
+}
+
+#course-matrix-table {
+  border-collapse: collapse;
+}
+
+#course-matrix-table,
+th,
+td {
+  border: 1px solid black;
+}
+
+#course-matrix-table th {
+  color: white;
+  background-color: #4f2fb6;
+}
+
+#course-matrix-table tr:first-child {
+  background: #ccc;
+}
+
+#course-matrix-table td:nth-child(1) {
+  font-weight: bold;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink_me_alarm {
+  animation: blinker 2s step-start infinite;
+  color: red;
+}
+
+.div1 {
+  width: 300px;
+  height: 25px;
+  border: 1px solid #4f2fb6;
+  transition: transform 2s;
+}
+
+.div1:hover {
+  width: 300px;
+  height: 25px;
+  transform: rotate(360deg);
+}
