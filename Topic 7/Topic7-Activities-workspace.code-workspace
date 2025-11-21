@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "workspaceCST120-Milestone",
+			"path": "../../Milestone/workspaceCST120-Milestone"
+		},
+		{
+			"name": "workspaceCST-120",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "workspaceCST-120"
+	}
+}

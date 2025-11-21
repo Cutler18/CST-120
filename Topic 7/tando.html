@@ -1,0 +1,278 @@
+<!--
+Jacob Cutler
+CST-120 Introduction to Web Development
+Activity 7
+11/23/2025
+
+REFERENCES:
+Geeks for Geeks. (2025, Jul 23). Why Would You Use Flexbox Instead of Floats?. https://www.geeksforgeeks.org/css/why-would-you-use-flexbox-instead-of-floats/
+Grand Canyon University. (n.d.). CST-120 Activity 2 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 3 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 6 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 7 Guide. 2023. Grand Canyon University
+SoloLearn. (n.d.). Introduction to HTML. https://www.sololearn.com/en/learn/courses/html-introduction
+SoloLearn. (n.d.). Introduction to HTML. https://www.sololearn.com/en/learn/courses/html-introduction
+Taneja, M. (2020, May 7). Grids vs Flexbox vs Floats vs Position. https://medium.com/@madhur.taneja/css-layouts-cced6c7a8764
+W3Schools. (n.d.). HTML Tutorial. 2025. Refsnes Data. https://www.w3schools.com/html/
+W3Schools. (n.d.). JavaScript Tutorial. 2025. Refsnes Data. https://www.w3schools.com/js/
+W3Schools. (n.d.). jQuery Tutorial. 2025. Refsnes Data. https://www.w3schools.com/jquery/default.asp
+-->
+
+<!--Set DOCTYPE to html-->
+<!DOCTYPE html>
+<!--Set language to English-->
+<html lang="en">
+<!--Page head-->
+
+<head>
+  <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--Bootstrap for CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Bootstrap for JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
+    <!--Bootstrap for JavaScript Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <!--JavaScript Reference-->
+  <script src="JS/copyright.js"></script>
+  <!--CSS Reference-->
+  <link rel="stylesheet" type="text/css" href="CSS/mysite.css">
+  <title>Course Assignment Matrix</title>
+</head>
+<!--Page body-->
+
+<body>
+  <div>
+    <!--Link back to index-->
+    <a href="index.html">Back to Main Page</a>
+  </div>
+  
+  <!--Title header-->
+  <h1>Course Assignment Matrix</h1>
+  <!--Table with the assignment matrix-->
+  <table width="50%" id="course-matrix-table">
+    <thead>
+      <tr align="center">
+        <!--Table headers-->
+        <th width="33%">Assignments</th>
+        <th width="33%">Week Due</th>
+        <th width="33%">Points</th>
+      </tr>
+    </thead>
+    <!--Week 1 assignments-->
+    <tbody>
+      <tr>
+        <td align="left">Summary of Current Course Content Knowledge</td>
+        <td align="center">1</td>
+        <td align="center">0</td>
+      </tr>
+      <tr>
+        <td align="left">Class Introductions</td>
+        <td align="center">1</td>
+        <td align="center">0</td>
+      </tr>
+      <tr>
+        <td align="left">Topic 1 DQ 1</td>
+        <td align="center">1</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Topic 1 DQ 2</td>
+        <td align="center">1</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Activity 1: Tools Install and Basic HTML</td>
+        <td align="center">1</td>
+        <td align="center">35</td>
+      </tr>
+      <tr>
+        <td align="left">Milestone 1: Iteration 1 of Web Site</td>
+        <td align="center">1</td>
+        <td align="center">85</td>
+      </tr>
+      <tr>
+        <td align="left">Week 1 Participation</td>
+        <td align="center">1</td>
+        <td align="center">20</td>
+      </tr>
+      <!--Week 2 Assignments-->
+      <tr>
+        <td align="left">Deploy Your Website to GitHub Pages (Optional)</td>
+        <td align="center">2</td>
+        <td align="center">0</td>
+      </tr>
+      <tr>
+        <td align="left">Topic 2 DQ 1</td>
+        <td align="center">2</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Topic 2 DQ 2</td>
+        <td align="center">2</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Activity 2: Advanced HTML</td>
+        <td align="center">2</td>
+        <td align="center">35</td>
+      </tr>
+      <tr>
+        <td align="left">Milestone 2: Iteration 2 of Website</td>
+        <td align="center">2</td>
+        <td align="center">75</td>
+      </tr>
+      <tr>
+        <td align="left">Week 2 Participation</td>
+        <td align="center">2</td>
+        <td align="center">20</td>
+      </tr>
+      <!--Week 3 Assignments-->
+      <tr>
+        <td align="left">Topic 3 DQ 1</td>
+        <td align="center">3</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Topic 3 DQ 2</td>
+        <td align="center">3</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Activity 3: CSS</td>
+        <td align="center">3</td>
+        <td align="center">35</td>
+      </tr>
+      <tr>
+        <td align="left">Milestone 3: Iteration 3 of Website</td>
+        <td align="center">3</td>
+        <td align="center">75</td>
+      </tr>
+      <tr>
+        <td align="left">Week 3 Participation</td>
+        <td align="center">3</td>
+        <td align="center">20</td>
+      </tr>
+      <!--Week 4 Assignments-->
+      <tr>
+        <td align="left">Topic 4 DQ 1</td>
+        <td align="center">4</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Topic 4 DQ 2</td>
+        <td align="center">4</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Activity 4: JavaScript</td>
+        <td align="center">4</td>
+        <td align="center">35</td>
+      </tr>
+      <tr>
+        <td align="left">Milestone 4: Iteration 4 of Website</td>
+        <td align="center">4</td>
+        <td align="center">60</td>
+      </tr>
+      <tr>
+        <td align="left">Week 4 Participation</td>
+        <td align="center">4</td>
+        <td align="center">20</td>
+      </tr>
+      <!--Week 5 Assignments-->
+      <tr>
+        <td align="left">Topic 5 DQ 1</td>
+        <td align="center">5</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Topic 5 DQ 2</td>
+        <td align="center">5</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Activity 5: Advanced HTML</td>
+        <td align="center">5</td>
+        <td align="center">35</td>
+      </tr>
+      <tr>
+        <td align="left">Milestone 5: Iteration 5 of Website</td>
+        <td align="center">5</td>
+        <td align="center">75</td>
+      </tr>
+      <tr>
+        <td align="left">Week 5 Participation</td>
+        <td align="center">5</td>
+        <td align="center">20</td>
+      </tr>
+      <!--Week 6 Assignments-->
+      <tr>
+        <td align="left">Topic 6 DQ 1</td>
+        <td align="center">6</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Topic 6 DQ 2</td>
+        <td align="center">6</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Activity 6: jQuery and Bootstrap</td>
+        <td align="center">6</td>
+        <td align="center">35</td>
+      </tr>
+      <tr>
+        <td align="left">Milestone 6: Iteration 6 of Website</td>
+        <td align="center">6</td>
+        <td align="center">75</td>
+      </tr>
+      <tr>
+        <td align="left">Week 6 Participation</td>
+        <td align="center">6</td>
+        <td align="center">20</td>
+      </tr>
+      <!--Week 7 Assignments-->
+      <tr>
+        <td align="left">Topic 7 DQ 1</td>
+        <td align="center">7</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Topic 7 DQ 2</td>
+        <td align="center">7</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="left">Activity 7: HTML Forms Processing</td>
+        <td align="center">7</td>
+        <td align="center">35</td>
+      </tr>
+      <tr>
+        <td align="left">Milestone 7: Final Project Presentation</td>
+        <td align="center">7</td>
+        <td align="center">35</td>
+      </tr>
+      <tr>
+        <td align="left">Milestone 7: Final Website</td>
+        <td align="center">7</td>
+        <td align="center">75</td>
+      </tr>
+      <tr>
+        <td align="left">Week 7 Participation</td>
+        <td align="center">7</td>
+        <td align="center">20</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!--Copyright Div-->
+  <div id="copyright"></div>
+</body>
+
+</html>
