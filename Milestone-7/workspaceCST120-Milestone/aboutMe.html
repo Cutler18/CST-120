@@ -1,0 +1,224 @@
+<!--
+Jacob Cutler
+Milestone Project - Week 7
+CST120 - Introduction to Web Development
+11/23/2025
+
+REFERENCES:
+Geeks for Geeks. (2025, Jul 23). Why Would You Use Flexbox Instead of Floats?. https://www.geeksforgeeks.org/css/why-would-you-use-flexbox-instead-of-floats/
+Grand Canyon University. (n.d.). CST-120 Activity 1 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 2 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 3 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 4 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 5 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 6 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 7 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Milestone Project Guide. 2024. Grand Canyon University
+SoloLearn. (n.d.). Introduction to HTML. https://www.sololearn.com/en/learn/courses/html-introduction
+SoloLearn. (n.d.). Introduction to JavaScript. https://www.sololearn.com/en/learn/courses/javascript-introduction
+Taneja, M. (2020, May 7). Grids vs Flexbox vs Floats vs Position. https://medium.com/@madhur.taneja/css-layouts-cced6c7a8764
+W3Schools. (n.d.). Bootstrap Form Inputs. 2025. Refsnes Data. https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp
+W3Schools. (n.d.). Bootstrap Forms. 2025. Refsnes Data. https://www.w3schools.com/bootstrap/bootstrap_forms.asp
+W3Schools. (n.d.). Bootstrap Navigation Bar. 2025. Refsnes Data. https://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+W3Schools. (n.d.). Floating Images. 2025. Refsnes Data. https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_float
+W3Schools. (n.d.). HTML Comments. 2025. Refsnes Data. https://www.w3schools.com/html/html_comments.asp
+W3Schools. (n.d.). HTML <div> Tag. 2025. Refsnes Data. https://www.w3schools.com/html/tag_div.ASP
+W3Schools. (n.d.). HTML Lists. 2025. Refsnes Data. https://www.w3schools.com/html/html_lists.asp
+W3Schools. (n.d.). HTML Tutorial. 2025. Refsnes Data. https://www.w3schools.com/html/
+W3Schools. (n.d.). jQuery hide() Method. 2025. Refsnes Data. https://www.w3schools.com/JQuery/eff_hide.asp
+-->
+
+<!--Assign the DOCTYPE-->
+<!DOCTYPE html>
+<!--Set the language to English-->
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Page Title-->
+  <title>About Me</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- jQuery (Note: While Bootstrap 5's JS bundle includes Popper, jQuery is still often used for other purposes) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Bootstrap JS (bundle includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <!--JavaScript Reference-->
+  <script src="JS/mysite.js"></script>
+  <!--CSS Reference-->
+  <link rel="stylesheet" type="text/css" href="CSS/mysite.css" />
+  <!--Custom Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet" />
+
+</head>
+<!--body of the page-->
+
+<body>
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand navbar-dark bg-dark" href="aboutMe.html">
+        <h1 align="center" id="titleHead" class="arizonia-regular">
+          All About Jacob
+        </h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="aboutMe.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="media.html">Photos / Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="mc.html">Life in the Marine Corps</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Body Title-->
+  <div class="container mt-4">
+    <h1 class="text-center" id="pageHead">About Me</h1>
+  </div>
+  <!--First section-->
+  <div id="div1" align="center">
+    <!--Image-->
+    <img src="images/GrowingUp.jpg" style="height: 400px" class="img-fluid rounded shadow" />
+    <!--First section title-->
+    <h2>Growing Up</h2>
+    <!--Show and hide buttons-->
+    <button class="showPar1">Show Paragraph</button>
+    <button class="hidePar1">Hide Paragraph</button>
+    <!--First section paragraph-->
+    <p id="abtPar1">
+      I was born in Sunvalley, Idaho in October of 1996. From there, I was
+      taken to our family ranch in the Phasimeroi Valley in the center of
+      Idaho. The ranch was about 1300 acres in size and consisted of multiple
+      hay fields, a large pasture, corrals, and a calving barn. A calving barn
+      is simply a small barn used to help cows give birth to new calves.
+      Living on a ranch that size involved a lot of playing outside and a lot
+      of work. I learned how to drive a stick shift truck by the time I was 7
+      years old. Before that, my dad would put his Dodge Cummins truck in
+      4-Low and let it crawl through the pasture while I steered and he threw
+      hay to the cows from the bed. Eventually I learned to work the clutch
+      and shifter and was able to drive the truck around the ranch whenever he
+      needed me to. The town I lived in was called May and my family was half
+      the population of that small town. I was fortunate to grow up the way I
+      did. I learned the value of hard work and effort. My dad taught me
+      traditional values that live inside of me to this day. My mom says me
+      and my siblings were 'feral' children because we had a lack of
+      supervision at the ranch, but fortunately all 8 of us made it out alive,
+      but not without a few scars. At the age of 9 I had an unfortunate run-in
+      with a door, that is my sister kicked it and the handle pinched my
+      finger against a concrete wall, and the top part of my right ring finger
+      was cut off. I also have scars from dog attacks, cat attacks, and even
+      hitting my head against a rock a time or two. When I was 11 years old,
+      we sold that house and the land because of my dad's health concerns. He
+      was type-1 diabetic and was degrading in his health fairly quickly. We
+      moved to Challis, Idaho which was an hour and a half from the original
+      ranch, but put us within 15 minutes of my Grandparents, my Dad's mother
+      and father. From that point on I was raised on a 90 acre ranch. I spent
+      my spare time in all levels of school wrestling. Once I reached Middle
+      School I added football to my list of activities. I even attempted to
+      run track at the end of my sophomore year, but a combination of
+      oversized cleats and a teammate that couldn't seem to put the baton into
+      my hand properly resulted in a tumble that left my shoulder dislocated
+      with a torn tendon that would require surgery. None the less I went on
+      to play football just a few months later. I was a varsity football
+      player and varsity wrestler for the entirety of my high school career
+      and never attempted any other sports after my track running incident.
+      That leads me to graduation. I wasn't the most academically proficient
+      student, but I graduated either way and went on to the next phase of my
+      life. After graduation I joined the Marine Corps and served for 2 1/2 years
+      before being discharged due to an injury I sustained in Japan. I then
+      worked as an underground miner in Challis, ID for a year, sold Kirby
+      vacuums, and worked security at a casino.
+    </p>
+  </div>
+  <!--Second section styled as inline-block-->
+  <div id="div2" align="center">
+    <!--Image-->
+    <img src="images/Japan.jpg" style="height: 400px" class="img-fluid rounded shadow" />
+    <!--Second section title-->
+    <h2>After Graduation</h2>
+    <!--Show and hide buttons-->
+    <button class="showPar2">Show Paragraph</button>
+    <button class="hidePar2">Hide Paragraph</button>
+    <!--Second section paragraph-->
+    <p id="abtPar2">
+      For the last 5 years I dedicated my career to the Arizona Department of
+      Corrections. I spent 7 weeks in a training academy for the Department of
+      Corrections where I learned how to be a Correctional Officer. Once I completed
+      the academy I was assigned to the Lewis Complex. I spent 5 months working
+      at the Barchey unit which is a medium custody protective custody unit. I
+      was then transferred to the Yuma complex. I served at the Yuma complex
+      for the next 4 1/2 years. While there I was able to work at every custody
+      level available at the complex. I credit both the Marine Corps and my
+      upbringing for my ability to adapt and put in my best effort. I started
+      attending college again during this time and completed my Associate's
+      in Computer Science at the end of 2024. I then enrolled with Grand Canyon
+      University for Software Development. This is where I am currently studying.
+      In 2024 I received a call that my dad, who has battled severe health
+      issues his whole life, was in the ICU in Salt Lake City. I drove the 10
+      hours to Salt Lake City on my own because my wife was attending my
+      daughter's end of the year ballet recital. While driving, I decided a
+      prayer would be the best thing I could do at that time. In my lengthy
+      prayer I told God that if He would be willing to preserve my Dad's life
+      long enough for me to see him one more time I would be greatful, but
+      I also told God that if He decided to take him before I got there I would
+      still be greatful because my Dad would no longer be in pain. Fast forward
+      a few hours, I was only 10 minutes away from the hospital when my brother
+      called with a shaky voice and told me that my Dad had passed away. I had
+      never felt that kind of desperate pain before. I began yelling and cursing,
+      blaming God for not preserving his life for 10 more minutes and wait for me to
+      get there. After a minute I remembered my prayer and apologized to God
+      for my outburst, but I couldn't get rid of the desperate pain that I
+      felt. My eyes were blurry and my mind was racing. I was afraid that I was
+      going to crash my car driving 75 miles per hour down the freeway. I prayed
+      again that God would calm me so I could arrive to the hospital safely.
+      Immediately I was calm and focused. I then heard a voice in my head that
+      told me I would see my Dad before he died. It's only later that I realized
+      it was the voice of God that told me I would see my Dad. Within a minute
+      of hearing that voice tell me I would see my dad once more before his death,
+      my brother called me again. He said, "I don't know why or how, but Dad is alive."
+      He continued to explain that as they were mourning over my Dad's body, he
+      stabilized. As my brother hung up the phone after telling me to drive safe,
+      I felt a loving holy presence unlike any I have ever felt before. I began
+      to weep with joy as I felt God wrap his arms around me in love. I was
+      blessed to be able to spend a day and half with my Dad before God called
+      him home. We buried my Dad on my Grandpa's ranch and spent time celebrating
+      the great life that he lived. A few months later my second son was born.
+      This was a joyous and concerning time. My youngest son, as we learned
+      shortly later, was born with a very rare genetic mutation that causes
+      an overgrowth in several limbs and in his brain. He is prone to seizures
+      and has severe developmental delays. It has been a long process in taking
+      care of him, but I know that God has blessed us with the life of that
+      young boy. We will continue having faith and trusting in God as we
+      continue forward in this life.
+    </p>
+  </div>
+  <!--Third inline-block section-->
+  <div id="div3" align="center">
+    <h3 class="blink_alarm">Click the picture to meet my family.</h3>
+    <!--Add image to this section with link to family page-->
+    <img onclick="loadFam()" src="images/wife.jpg" class="in_and_out img-fluid rounded shadow" />
+  </div>
+  <div id="div4" align="center">
+    <h3 class="blink_alarm">Click the Image to See the My Hobbies Page</h3>
+    <img onclick="loadHob()" src="images/Music.jpg" class="in_and_out img-fluid rounded shadow" />
+  </div>
+  <!--Create a horizontal rule under the body-->
+  <hr />
+  <!--Footer section-->
+  <footer>
+    <!--Buttons to other pages that continue from About Me-->
+    <button onclick="toTop()">Back to Top</button>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!--
+Jacob Cutler
+Milestone Project - Week 7
+CST120 - Introduction to Web Development
+11/23/2025
+
+REFERENCES:
+Geeks for Geeks. (2025, Jul 23). Why Would You Use Flexbox Instead of Floats?. https://www.geeksforgeeks.org/css/why-would-you-use-flexbox-instead-of-floats/
+Grand Canyon University. (n.d.). CST-120 Activity 1 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 2 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 3 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 4 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 5 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 6 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Activity 7 Guide. 2023. Grand Canyon University
+Grand Canyon University. (n.d.). CST-120 Milestone Project Guide. 2024. Grand Canyon University
+SoloLearn. (n.d.). Introduction to HTML. https://www.sololearn.com/en/learn/courses/html-introduction
+SoloLearn. (n.d.). Introduction to JavaScript. https://www.sololearn.com/en/learn/courses/javascript-introduction
+Taneja, M. (2020, May 7). Grids vs Flexbox vs Floats vs Position. https://medium.com/@madhur.taneja/css-layouts-cced6c7a8764
+W3Schools. (n.d.). Bootstrap Form Inputs. 2025. Refsnes Data. https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp
+W3Schools. (n.d.). Bootstrap Forms. 2025. Refsnes Data. https://www.w3schools.com/bootstrap/bootstrap_forms.asp
+W3Schools. (n.d.). Bootstrap Navigation Bar. 2025. Refsnes Data. https://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+W3Schools. (n.d.). Floating Images. 2025. Refsnes Data. https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_float
+W3Schools. (n.d.). HTML Comments. 2025. Refsnes Data. https://www.w3schools.com/html/html_comments.asp
+W3Schools. (n.d.). HTML <div> Tag. 2025. Refsnes Data. https://www.w3schools.com/html/tag_div.ASP
+W3Schools. (n.d.). HTML Lists. 2025. Refsnes Data. https://www.w3schools.com/html/html_lists.asp
+W3Schools. (n.d.). HTML Tutorial. 2025. Refsnes Data. https://www.w3schools.com/html/
+W3Schools. (n.d.). jQuery hide() Method. 2025. Refsnes Data. https://www.w3schools.com/JQuery/eff_hide.asp
+-->
+
+<!--Assign the DOCTYPE-->
+<!DOCTYPE html>
+<!--Set the language to English-->
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Page Title-->
+    <title>Marine Corps</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- jQuery (Note: While Bootstrap 5's JS bundle includes Popper, jQuery is still often used for other purposes) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap JS (bundle includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <!--JavaScript Reference-->
+    <script src="JS/mysite.js"></script>
+    <!--CSS Reference-->
+    <link rel="stylesheet" type="text/css" href="CSS/mysite.css" />
+    <!--Custom Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet" />
+
+</head>
+<!--body of the page-->
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-dark bg-dark" href="aboutMe.html">
+                <h1 align="center" id="titleHead" class="arizonia-regular">
+                    All About Jacob
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="aboutMe.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html">Photos / Videos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="mc.html">Life in the Marine Corps</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Body Title-->
+    <div class="container mt-4">
+        <h1 class="text-center" id="pageHead">Life in the Marine Corps</h1>
+        <!--Card Style photo viewer-->
+        <div id="marineCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/MC1.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC2.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC3.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC4.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC5.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC6.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC7.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC8.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC9.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC10.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC11.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC12.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC13.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC14.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC15.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC16.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC17.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC18.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC19.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC20.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC21.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC22.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC23.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC24.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC25.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC26.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC27.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC28.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC29.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC30.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC31.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MC32.jpg" class="d-block w-75 mx-auto rounded shadow">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#marineCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#marineCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <!--Descriptive Paragraph-->
+            <p class="mt-3 editable">
+                In 2015 I shipped off to MCRD San Diego to begin my journey with the United States Marine Corps.
+                I spent 3 months learning how to be a Marine through Marine Corps history, rifle training, and
+                intense physical exercise. After that, I spent a month and a half at Camp Pendleton in Marine
+                Combat training before being shipped to Fort Leanordwood, MO for 3 months where I attended my
+                job school for motor transportation. I learned to operate and maintain HMMWV's, 7-Tons, and LVSR's.
+                From there I was sent to Camp Fuji, Japan where I spent a year working as a Motor Vehicle Operator.
+                Japan is also where I injured my shoulder during a hand to hand combat training session. I was later
+                sent to Yuma, AZ where I served the remainder of my time. However, my injured shoulder was never
+                tended to and therefore caused my to be discharged early due to medical reasons. My Marine Corps
+                career was shorter than most, but it taught me a lot and was a foundational point in my life
+                that led to me becoming the man I am today.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
